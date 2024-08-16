@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(15,15,15,255);
+}
+
+.page1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 20px; 
+    height: 100vh;
+}
+
+.leftside {
+    flex: 1; 
+    margin-right: 20px; 
+    margin-left: 20px; 
+}
+
+.rightside {
+    flex: 1;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.rightside img {
+    width: 400px;
+    height: 600px;
+    object-fit: cover; 
+    border-radius: 15px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.rightside img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(49, 46, 46, 0.3); 
+}
+
+.page2 {
+    height:1000px;
+    background-color:rgb(253, 251, 251);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.boxes {
+    display: flex; 
+    justify-content: center;
+    gap: 30px; 
+    margin-top: 20px;
+}
+
+.p1 {
+    color: rgb(137, 135, 135);
+    font-size: 80px;
+    font-family: 'Raleway Dots', sans-serif;
+    font-weight: 350;
+}
+
+.p2 {
+    font-family: "Playwrite BE VLG", cursive;
+    font-optical-sizing: auto;
+    font-weight: 20px;
+    font-style: normal;
+    font-size: 30px;
+    color:  rgb(137, 135, 135);
+    width: 500px;
+    line-height: 50px;
+    margin-bottom: 0px;
+}
+
+.name {
+    font-size: 70px;
+}
+
+.contact {
+    color:  rgb(137, 135, 135);
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     
+}
+
+.pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: fill; 
+    cursor: pointer;
+    background-color: #f7f5f5; 
+    padding: 5px;
+    border:2px solid rgb(137, 135, 135) ; 
+}
+
+.pic:hover {
+    box-shadow: 0 4px 15px #f7f5f5;
+    transform: scale(1.05);
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.p1 {
+    animation: slideInLeft 1s ease-out;
+    animation: fadeIn 1s ease-out, slideInLeft 2s ease-out;
+}
+
+.p1:hover, .p2:hover {
+    color:rgb(239, 233, 233);
+    transition: color 0.3s ease;
+}
+
+
